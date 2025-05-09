@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Cards with Animation</title>
+  <link rel="stylesheet" href="video.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <h2 data-aos="fade-up">Our Video Gallery</h2>
+
+  <div class="container">
+
+    <div class="card" data-aos="fade-up">
+      <!-- Video tag replaces the image -->
+      <video width="100%" height="240" controls autoplay muted loop poster="./Video/MeditationPoster.mp4">
+        <source src="./Video/MeditationPoster.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h2>Meditation</h2>
+      <div class="meta">Appetizer<br>Time Needs: 30 Mins</div>
+      <a href="https://www.youtube.com/watch?v=60Gnd8Wy0gE" target="_blank" class="button">View Full Video</a>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <!-- Video tag replaces the image -->
+      <video width="100%" height="240" controls autoplay muted loop poster="./Video/MeditationPoster.mp4">
+        <source src="./Video/MeditationPoster.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h2>Tantra</h2>
+      <div class="meta">Appetizer<br>Time Needs: 30 Mins</div>
+      <a href="https://www.youtube.com/watch?v=60Gnd8Wy0gE" target="_blank" class="button">View Full Video</a>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <!-- Video tag replaces the image -->
+      <video width="100%" height="240" controls autoplay muted loop poster="./Video/MeditationPoster.mp4">
+        <source src="./Video/MeditationPoster.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h2>Diet</h2>
+      <div class="meta">Appetizer<br>Time Needs: 30 Mins</div>
+      <a href="https://www.youtube.com/watch?v=60Gnd8Wy0gE" target="_blank" class="button">View Full Video</a>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <!-- Video tag replaces the image -->
+      <video width="100%" height="240" controls autoplay muted loop poster="./Video/MeditationPoster.mp4">
+        <source src="./Video/MeditationPoster.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h2>Life Thought</h2>
+      <div class="meta">Appetizer<br>Time Needs: 30 Mins</div>
+      <a href="https://www.youtube.com/watch?v=60Gnd8Wy0gE" target="_blank" class="button">View Full Video</a>
+    </div>
+  </div>
+
+  <h2 data-aos="fade-up">Here Is More Videos</h2>
+  <p data-aos="fade-up" data-aos-delay="100">
+    <strong>“The Inner Journey: Awakening Through Meditation, Tantra, Diet & Thought”</strong>
+    <a href="#">Shree Vidya Mahayog</a>.
+  </p>
+
+  <div data-aos="fade-up" data-aos-delay="200">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/60Gnd8Wy0gE?si=RRimhj_SE4K5KR-a"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+
+</html>

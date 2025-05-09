@@ -1,0 +1,152 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ff0000, #ff9900, #ffff00);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    color: #444;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+    width: 240px;
+    border-radius: 10px;
+}
+
+.text-content h2 {
+    color: #2b9dbf;
+    font-weight: 700;
+}
+
+.text-content em {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text-content {
+    max-width: 800px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    background-color: #111;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.buttons button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff8e7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.events {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.headername {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background-color: #004b6f;
+}
+
+.card .content {
+    padding: 1rem;
+}
+
+.content p {
+    margin: 0.3rem 0;
+}
+
+.register-btn {
+    background: #d8441c;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #b03016;
+}
+
+/* ✅ Image Hover Effect */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
